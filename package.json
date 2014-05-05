@@ -16,16 +16,13 @@
     "grunt": "~0.4.4",
     "grunt-cli": "~0.1.13",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-uglify": "~0.4.0",
     "grunt-mocha-test": "~0.10.2",
     "grunt-bump": "0.0.13",
-    "browserify": "~3.44.2",
     "grunt-express": "~1.2.1",
     "express": "~4.0.0",
     "cors": "~2.2.0"
   },
   "scripts": {
-    "prepublish": "grunt build",
     "test": "grunt test"
   },
   "repository": {
