@@ -1,6 +1,6 @@
 {
   "name": "httpplease-promises",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A plugin that adds promise support to httpplease",
   "main": "./httpplease-promises.js",
   "directories": {
