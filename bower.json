@@ -15,7 +15,7 @@
     "promises"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/matthewwithanm/httpplease-promises.js",
+  "homepage": "https://github.com/matthewwithanm/httpplease-promises",
   "ignore": [
     "**/.*",
     "node_modules",
