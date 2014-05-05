@@ -4,7 +4,7 @@
 var
     assert = require('chai').assert,
     httpplease = require('httpplease'),
-    promises = require('../lib/index'),
+    promises = require('../httpplease-promises'),
     testServerUrl = 'http://localhost:4001',
     http = httpplease.use(promises);
 
