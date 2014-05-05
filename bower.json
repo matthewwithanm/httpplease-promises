@@ -5,7 +5,7 @@
     "Matthew Dapena-Tretter <m@tthewwithanm.com>"
   ],
   "description": "A plugin that adds promise support to httpplease",
-  "main": "browser-builds/standalone/httpplease-promises.js",
+  "main": "lib/index.js",
   "keywords": [
     "xhr",
     "request",
