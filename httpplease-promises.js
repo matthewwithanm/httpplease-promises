@@ -1,9 +1,7 @@
 /*globals define */
 'use strict';
 
-var root = this; // jshint ignore:line
-
-(function (factory) {
+(function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(['es6-promise'], function (es6Promise) {
             return (root.httppleasepromises = factory(es6Promise.Promise));
@@ -13,7 +11,7 @@ var root = this; // jshint ignore:line
     } else {
         root.httppleasepromises = factory(root.Promise);
     }
-}(function (Promise) {
+}(this, function (Promise) { // jshint ignore:line
     return {
         processRequest: function (req) {
             var resolve, reject,
