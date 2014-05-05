@@ -1,0 +1,26 @@
+{
+  "name": "httpplease-promises",
+  "version": "0.1.0",
+  "authors": [
+    "Matthew Dapena-Tretter <m@tthewwithanm.com>"
+  ],
+  "description": "A plugin that adds promise support to httpplease",
+  "main": "browser-builds/standalone/httpplease-promises.js",
+  "keywords": [
+    "xhr",
+    "request",
+    "http",
+    "XMLHttpRequest",
+    "isomorphic",
+    "promises"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/matthewwithanm/httpplease-promises.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
