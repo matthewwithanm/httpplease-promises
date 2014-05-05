@@ -6,15 +6,14 @@ var root = this; // jshint ignore:line
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         define(['es6-promise'], function (es6Promise) {
-            return (root.httppleasepromises = factory(es6Promise));
+            return (root.httppleasepromises = factory(es6Promise.Promise));
         });
     } else if (typeof exports === 'object') {
-        module.exports = factory(require('es6-promise'));
+        module.exports = factory(require('es6-promise').Promise);
     } else {
         root.httppleasepromises = factory(root.Promise);
     }
-}(function (es6Promise) {
-    var Promise = es6Promise.Promise;
+}(function (Promise) {
     return {
         processRequest: function (req) {
             var resolve, reject,
