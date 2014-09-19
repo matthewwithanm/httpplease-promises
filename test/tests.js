@@ -6,7 +6,8 @@ var
     httpplease = require('httpplease'),
     promises = require('../httpplease-promises'),
     testServerUrl = 'http://localhost:4001',
-    http = httpplease.use(promises);
+    Promise = require('es6-promise').Promise,
+    http = httpplease.use(promises(Promise));
 
 
 describe('httpplease-promises', function () {

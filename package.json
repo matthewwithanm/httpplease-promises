@@ -7,8 +7,7 @@
     "test": "test"
   },
   "peerDependencies": {
-    "httpplease": ">=0.8",
-    "es6-promise": "~1.0.0"
+    "httpplease": ">=0.8"
   },
   "devDependencies": {
     "mocha": "~1.18.2",
@@ -20,7 +19,8 @@
     "grunt-bump": "0.0.13",
     "grunt-express": "~1.2.1",
     "express": "~4.0.0",
-    "cors": "~2.2.0"
+    "cors": "~2.2.0",
+    "es6-promise": "~1.0.0"
   },
   "scripts": {
     "test": "grunt test"

@@ -22,7 +22,7 @@ Usage
 ```javascript
 var httpplease = require('httpplease'),
     promises = require('httpplease-promises'),
-    http = httpplease.use(promises);
+    http = httpplease.use(promises());
 
 http
     .get('http://example.com')
@@ -34,6 +34,16 @@ http
 Alernatively, AMD users can use `define` and script tag users can use
 `window.httppleasepromises`.
 
+By default, native Promises will be used. If you want to provide a different
+implementation (which may be necessary depending on the environments you want to
+support), pass it in:
+
+```javascript
+var httpplease = require('httpplease'),
+    promises = require('httpplease-promises'),
+    Promise = require('bluebird'),
+    http = httpplease.use(promises(Promise));
+```
 
 [httpplease]: https://github.com/matthewwithanm/httpplease.js
 [node]: http://nodejs.org
